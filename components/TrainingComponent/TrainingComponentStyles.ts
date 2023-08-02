@@ -1,0 +1,70 @@
+import { styled } from "styled-components/native";
+import { colors } from "../../theme/colors";
+
+
+export const MainWrapper = styled.View`
+padding: 16px;
+display: flex;
+flex-direction: column;
+row-gap: 24px;
+`;
+export const ItemWrapper = styled.View`
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+`;
+export const InfoWrapper = styled.View`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+row-gap: 8px;
+`;
+export const BigBoldText = styled.Text`
+font-size: 20px;
+font-weight: 400;
+color: ${colors.textMain};
+`;
+export const GrayText = styled.Text`
+font-size: 12px;
+font-weight: 400;
+color: ${colors.gray};
+`;
+export const TableTitle = styled.Text`
+font-size:12px;
+font-weight: 600;
+color: ${colors.gray600};
+`;
+export const TableValue = styled.Text`
+font-size: 12px;
+font-weight: 400;
+color: ${colors.gray800};
+`;
+export const Button = styled.Image<{open: boolean}>`
+margin: 9px 6px;
+transform: rotate(${p => p.open ? '180deg' : '0deg'});
+`;
+export const Table = styled.View`
+display: flex;
+row-gap: 8px;
+`;
+export const TableItem = styled.View`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+`;
+export const SubTable = styled.View`
+display: flex;
+flex-direction: column;
+row-gap: 8px;
+margin-left: 10px;
+`;
+export const OpenIcon = styled.Image<{open: boolean}>`
+transform: rotate(${p => p.open ? '90deg' : '0deg'});
+`;
+export const ArrayTableValue = styled.View`
+display: flex;
+flex-direction: row;
+align-items: center;
+column-gap: 5px;
+`;

@@ -7,6 +7,8 @@ padding: 16px;
 display: flex;
 flex-direction: column;
 row-gap: 24px;
+background-color: white;
+border-radius: 12px;
 `;
 export const ItemWrapper = styled.View`
 display: flex;

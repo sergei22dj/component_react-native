@@ -1,5 +1,6 @@
+import React from 'react';
+import {data} from '../../../mock/data';
 import {MainWrapper} from './TrainingComponentStyles';
-import {data} from '../../mock/data';
 import Item from './components/Item';
 
 const TrainingComponenet = () => {

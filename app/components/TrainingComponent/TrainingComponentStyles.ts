@@ -1,5 +1,6 @@
 import { styled } from "styled-components/native";
-import { colors } from "../../theme/colors";
+// import { theme } from "~/ui/theme/default/theme";
+import React from "react";
 
 
 export const MainWrapper = styled.View`
@@ -25,22 +26,22 @@ row-gap: 8px;
 export const BigBoldText = styled.Text`
 font-size: 20px;
 font-weight: 400;
-color: ${colors.textMain};
+color: gray;
 `;
 export const GrayText = styled.Text`
 font-size: 12px;
 font-weight: 400;
-color: ${colors.gray};
+color: gray;
 `;
 export const TableTitle = styled.Text`
 font-size:12px;
 font-weight: 600;
-color: ${colors.gray600};
+color: gray;
 `;
 export const TableValue = styled.Text`
 font-size: 12px;
 font-weight: 400;
-color: ${colors.gray800};
+color: gray;
 `;
 export const Button = styled.Image<{open: boolean}>`
 margin: 9px 6px;
@@ -49,6 +50,7 @@ transform: rotate(${p => p.open ? '180deg' : '0deg'});
 export const Table = styled.View`
 display: flex;
 row-gap: 8px;
+height: 100%;
 `;
 export const TableItem = styled.View`
 display: flex;

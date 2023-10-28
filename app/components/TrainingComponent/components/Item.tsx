@@ -15,6 +15,7 @@ import {
   TableValue,
 } from '../TrainingComponentStyles';
 import {TouchableOpacity, View} from 'react-native';
+import React from 'react';
 
 const Item: FC<ItemData> = ({amount, count, id, isin, tableData, title}) => {
   const [openTable, setOpenTable] = useState(false);

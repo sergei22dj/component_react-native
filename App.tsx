@@ -24,7 +24,8 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import {MainScreen} from './screens/InvestmentScreen';
+import {MainScreen} from './app/screens/InvestmentScreen';
+import {TestScreen} from './app/screens/TestScreen/TestScreen';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -46,7 +47,7 @@ function App(): JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <MainScreen />
+          <TestScreen />
         </View>
       </ScrollView>
     </SafeAreaView>
